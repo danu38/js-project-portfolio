@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+.header {
+    padding: 2rem 2rem 2rem 40rem; 
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  gap: 2rem;
+}
+
+.header-container {
+    display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.header-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-text {
+    max-width: 600px;
+    text-align: left;
+    font-family: 'Hina Mincho', serif;
+}
+
+.header-text h1 {
+    margin-bottom: 0.5rem;
+}
+
+.header-text h2 {
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.header-text p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-title h2 {
+    text-align: left; /* Make sure text aligns to left */
+  margin-bottom: 2rem;
+    color: #1a168a;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+.header-title h4 {
+    text-align: left; /* Make sure text aligns to left */
+  margin-bottom: 2rem;
+    color: #1a168a;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
