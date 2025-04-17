@@ -2,33 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 
 .header {
-    padding: 2rem 2rem 2rem 40rem; 
+    /* padding: 2rem 2rem 2rem 40rem;  */
+    padding: 2rem;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
+  align-items: center; /* Align content to the left */
   gap: 2rem;
+  justify-content: center;
 }
 
 .header-container {
     display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   gap: 2rem;
+
 }
 
 .header-image img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
+    border: 5px solid #ffffff;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
-    max-width: 600px;
+    max-width: 100%;
     text-align: left;
     font-family: 'Hina Mincho', serif;
+    
 }
 
 .header-text h1 {
@@ -49,17 +55,56 @@
     font-size: 2rem;
     font-weight: bold;
     color: #333;
+    justify-content:center;
+    align-items: center;
+    text-align: left;
+    padding-left: 1 rem;
 }
 
-.header-title h2 {
+.header-title h2 ,h4{
     text-align: left; /* Make sure text aligns to left */
   margin-bottom: 2rem;
     color: #1a168a;
     font-family: 'Nanum Gothic Coding', monospace;
+   
 }
-.header-title h4 {
-    text-align: left; /* Make sure text aligns to left */
-  margin-bottom: 2rem;
-    color: #1a168a;
-    font-family: 'Nanum Gothic Coding', monospace;
-}
+
+@media (min-width: 768px) {
+    .header {
+      padding: 2rem 4rem;
+      align-items: center;
+    }
+  
+    .header-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .header-text {
+      max-width: 700px;
+    }
+  
+    .header-image img {
+      width: 180px;
+      height: 180px;
+    }
+
+    .header-title {
+  
+        
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 1 rem;
+    }
+    .header-title h2 ,h4{
+        text-align: left; /* Make sure text aligns to left */
+      
+       
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header {
+      padding: 2rem 10rem;
+    }
+  }
