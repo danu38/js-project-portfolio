@@ -1,14 +1,31 @@
 .projects {
-    padding: 2rem;
+    padding: 2rem 4rem;
     align-items: center;
     justify-content:center;
-  }
-  
-  .project-card {
     display: flex;
     flex-direction: column;
+    background-color: #fafafa;
+  }
+  .projects-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    
+    text-align: left; /* Make sure text aligns to left */
+    margin-bottom: 2rem;
+      color: #1a168a;
+      font-family: 'Nanum Gothic Coding', monospace;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
     margin-bottom: 3rem;
+  }
+  .project-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
   }
   .project-image {
     width: 100%;
@@ -18,19 +35,23 @@
   }
   
   .project-info {
-    display: flex;
+     display: flex; 
     flex-direction: column;
     max-width: 600px;
   }
-  
+  .project-info p {
+    
+    color: #141414;
+    margin-bottom: 0rem;
+  }
   .tags {
     margin-top: 1rem;
   }
   
   .tag {
     display: inline-block;
-    background-color: #eee;
-    color: #333;
+    background-color: #101010;
+    color: #f9f4f4;
     padding: 0.25rem 0.5rem;
     margin-right: 0.5rem;
     border-radius: 4px;
@@ -40,8 +61,11 @@
   .project-links a {
     margin-right: 1rem;
     text-decoration: none;
-    color: #0077cc;
+    color: #070707;
     font-weight: bold;
+    border: #4a4646 ;
+    border-radius: 95px;
+    background-color: #e0e0e0;
   }
   
   @media (min-width: 768px) {
