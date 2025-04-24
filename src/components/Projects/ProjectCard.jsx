@@ -11,7 +11,7 @@ display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem;
-  max-width: 900px;
+  /* max-width: 900px; */
   width: 100%; /* Allow responsive shrinking */
 `;
 

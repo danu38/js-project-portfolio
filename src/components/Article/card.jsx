@@ -4,20 +4,25 @@ import styled from 'styled-components';
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 350px;
+  width: 100%;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
 
 const Image = styled.img`
+  
   width: 100%;
-  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 `;
 
 const Info = styled.div`
@@ -30,7 +35,7 @@ const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
   color: #130303;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 `;
 
 const Desc = styled.p`
@@ -39,7 +44,7 @@ const Desc = styled.p`
 `;
 
 const TagList = styled.div`
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 `;
 
 const Tag = styled.span`

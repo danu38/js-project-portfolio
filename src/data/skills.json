@@ -1,0 +1,53 @@
+{
+    "skills": [
+      {
+        "title": "Code",
+
+        "skillset": [
+          "HTML5",
+          "CSS3",
+          "Javascript ES6",
+          "Typscript",
+          "ReactJS",
+          "NodeJS",
+          "ExpressJS",
+          "Python",
+          "PHP"
+        ]
+      },
+      {
+        "title": "Toolbox",
+
+        "skillset": [
+          "VS code",
+          "Postman",
+          "Jira",
+          "Trello board",
+          "Figma",
+          "Keynote",
+          "Slack"  ,
+          "JupyterNotebook",
+          "sourcetree",
+          "swagger"
+        ]
+      },
+      {
+        "title": "Upcoming",
+
+        "skillset": [
+          "AWS",
+            "Docker"
+        ]
+      },
+      {
+        "title": "More",
+
+        "skillset": [
+          "Project Coordinate",
+          "Moodle specialist",
+            "Agile methodology",
+            "code reviewer"
+        ]
+      }
+    ]
+  }

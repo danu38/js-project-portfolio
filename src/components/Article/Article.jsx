@@ -3,7 +3,7 @@ import Card from './card';
 import styled from 'styled-components';
 
 import articleData from '../../data/articles.json'; //  project data
-import './article.css';
+
 
 
 
@@ -21,20 +21,34 @@ padding: 2rem 4rem;
 const Title = styled.h2`
   font-size: 2rem;
     font-weight: bold;
-    
     text-align: left; /* Make sure text aligns to left */
     margin-bottom: 2rem;
-      color: #050114;
-      font-family: 'Nanum Gothic Coding', monospace;
+    color: #050114;
+    font-family: 'Nanum Gothic Coding', monospace;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on larger screens */
+  }
+
 `;
 
 const Articles = () => {
   return (
     <Section>
       <Title>My Words</Title>
-      {articleData.articles.map((article, index) => (
-        <Card key={index} {...article} />
-      ))}
+      <Grid>
+        {articleData.articles.map((article, index) => (
+          <Card key={index} {...article} />
+        ))}
+      </Grid>
     </Section>
   );
 };
