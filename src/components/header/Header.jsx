@@ -1,7 +1,10 @@
 // import "./Header.css"; // Assuming you have a CSS file for styling
 import ProfilePic from "../../../assets/profile.jpeg";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+
+import { Link } from 'react-scroll';
+import { FaChevronDown } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 
 const HeaderSection = styled.header`
   padding: 7rem;
@@ -89,6 +92,27 @@ const HeaderText = styled.div`
   }
 `;
 
+const ScrollArrow = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    color: #aaa;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+`;
+
 
 const Header = () => {
     return (
@@ -103,7 +127,7 @@ const Header = () => {
 
                 <HeaderText>
                     <HeaderTitle>
-                        <h4>Hi I am Danushka</h4>
+                        <h4>Hi I am Danushka👋</h4>
                         <h2>Full Stack Developer</h2>
                     </HeaderTitle>
                     <p>
@@ -112,6 +136,12 @@ const Header = () => {
                 </HeaderText>
             </HeaderContainer>
             
+<ScrollArrow>
+  <Link to="tech" smooth={true} duration={600}>
+    <FaChevronDown />
+  </Link>
+</ScrollArrow>
+
         </HeaderSection>
     );
 };

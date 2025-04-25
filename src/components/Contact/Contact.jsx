@@ -2,11 +2,12 @@ import styled from "styled-components";
 import contactData from "../../data/contact.json";
 import React from "react";
 import ProfilePic from "../../../assets/profile.jpeg";
+import { Element } from 'react-scroll';
 
 const Contact = () => {
     const data = contactData.contact[0];
   return (
-    
+    <Element name="contact">
     <InfoContainer>
       <ContactTitle>{data.title}</ContactTitle>
         <ContactImage>
@@ -22,7 +23,7 @@ const Contact = () => {
         ))}
       </SocialLinks>
     </InfoContainer>
-    
+    </Element>
   );
 };
 

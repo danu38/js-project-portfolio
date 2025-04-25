@@ -1,15 +1,47 @@
 import styled from "styled-components";
 import techData from "../../data/techData.json";
 import React from "react";
+import { Element } from 'react-scroll';
+import { Link } from 'react-scroll';
+import { FaChevronDown } from 'react-icons/fa';
+
+const ScrollArrow = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    color: #aaa;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+`;
 
 const Tech = () => {
   return (
-    
-    <TechContainer>
-      <TechTitle>{techData.title}</TechTitle>
-      <TechDesc>{techData.description}</TechDesc>
-    </TechContainer>
-    
+    <Element name="tech">
+
+
+      <TechContainer>
+        <TechTitle>{techData.title}</TechTitle>
+        <TechDesc>{techData.description}</TechDesc>
+
+        <ScrollArrow>
+          <Link to="projects" smooth={true} duration={600}>
+            <FaChevronDown />
+          </Link>
+        </ScrollArrow>
+      </TechContainer>
+    </Element>
   );
 };
 

@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import skillData from '../../data/skills.json';
+import { Link } from 'react-scroll';
+import { FaChevronDown } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 
 // Styled Components
 const SkillsWrapper = styled.div`
@@ -49,9 +52,30 @@ const SkillItem = styled.div`
   color: #f0e8e8;
 `;
 
+const ScrollArrow = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    color: #aaa;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+`;
+
 const Skills = () => {
   return (
-    
+    <Element name="skills">
     <SkillsWrapper>
       <Title>Skills</Title>
 
@@ -65,8 +89,14 @@ const Skills = () => {
           </SkillGrid>
         </CategoryWrapper>
       ))}
+
+      <ScrollArrow>
+        <Link to="contact" smooth={true} duration={600}>
+          <FaChevronDown />
+        </Link>
+      </ScrollArrow>
     </SkillsWrapper>
-   
+</Element>
   );
 };
 

@@ -3,7 +3,9 @@ import Card from './card';
 import styled from 'styled-components';
 
 import articleData from '../../data/articles.json'; //  project data
-
+import { Link } from 'react-scroll';
+import { FaChevronDown } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 
 
 
@@ -40,16 +42,44 @@ const Grid = styled.div`
 
 `;
 
+const ScrollArrow = styled.div`
+  margin-top: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    color: #aaa;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+`;
+
 const Articles = () => {
   return (
-    <Section>
-      <Title>My Words</Title>
-      <Grid>
-        {articleData.articles.map((article, index) => (
-          <Card key={index} {...article} />
-        ))}
-      </Grid>
-    </Section>
+    <Element name="articles">
+      <Section>
+        <Title>My Words</Title>
+        <Grid>
+          {articleData.articles.map((article, index) => (
+            <Card key={index} {...article} />
+          ))}
+        </Grid>
+        <ScrollArrow>
+          <Link to="skills" smooth={true} duration={600}>
+            <FaChevronDown />
+          </Link>
+        </ScrollArrow>
+      </Section>
+    </Element>
   );
 };
 
