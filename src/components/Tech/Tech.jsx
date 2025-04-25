@@ -4,10 +4,12 @@ import React from "react";
 
 const Tech = () => {
   return (
+    
     <TechContainer>
       <TechTitle>{techData.title}</TechTitle>
       <TechDesc>{techData.description}</TechDesc>
     </TechContainer>
+    
   );
 };
 
@@ -15,7 +17,7 @@ export default Tech;
 
 // ---------- Styled Components ----------
 const TechContainer = styled.div`
-  padding: 2rem;
+  padding: 20rem;
   background-color: #211668;
   display: flex;
   flex-direction: row;

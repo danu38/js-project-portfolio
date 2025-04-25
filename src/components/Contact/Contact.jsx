@@ -1,29 +1,44 @@
 import styled from "styled-components";
-import techData from "../../data/techData.json";
+import contactData from "../../data/contact.json";
 import React from "react";
+import ProfilePic from "../../../assets/profile.jpeg";
 
 const Contact = () => {
+    const data = contactData.contact[0];
   return (
-    <TechContainer>
-      <TechTitle>{techData.title}</TechTitle>
-      <TechDesc>{techData.description}</TechDesc>
-    </TechContainer>
+    
+    <InfoContainer>
+      <ContactTitle>{data.title}</ContactTitle>
+        <ContactImage>
+            <img src={ProfilePic} alt="Profile" /></ContactImage>
+      <Name>{data.name}</Name>
+      <Name>{data.mobile}</Name>
+      <Name>{data.email}</Name>
+      <SocialLinks>
+        {data.socials.map((link, index) => (
+          <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+            <img src={link.icon} alt={link.platform} />
+          </a>
+        ))}
+      </SocialLinks>
+    </InfoContainer>
+    
   );
 };
 
-export default Tech;
+export default Contact;
 
 // ---------- Styled Components ----------
 const InfoContainer = styled.div`
   padding: 2rem;
-  background-color: #d8d7df;
+  background-color: #f7f7f8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 0rem;
   flex-wrap: wrap;
-  color: #777;
+  color: #f5f0f0;
   max-width: 100%;
   margin: 0 auto;
 
@@ -35,7 +50,7 @@ const InfoContainer = styled.div`
 
 const ContactTitle = styled.h2`
     font-size: 2rem;
-  color: #eee8e8;
+  color: #1e104e;
   font-family: "Nanum Gothic Coding", monospace;
   
 
@@ -45,7 +60,19 @@ const ContactTitle = styled.h2`
   }
 `;
 
-const ContactImg = styled.div`
+const Name = styled.h2`
+    font-size: 2rem;
+  color: #0c0c0c;
+  font-family: "Nanum Gothic Coding", monospace;
+  
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    gap: 0rem;
+  }
+`;
+
+const ContactImage = styled.div`
   img {
     width: 160px;
     height: 160px;
@@ -60,3 +87,21 @@ margin-top: 3rem;
     }
   }
 `;
+
+const SocialLinks = styled.div`
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+
+  a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+`;
+

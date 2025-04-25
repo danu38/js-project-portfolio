@@ -1,14 +1,15 @@
 // import "./Header.css"; // Assuming you have a CSS file for styling
-import ProfilePic from "../../../assets/profile.jpeg"; // Adjust the path as necessary
+import ProfilePic from "../../../assets/profile.jpeg";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const HeaderSection = styled.header`
-  padding: 2rem;
+  padding: 7rem;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: center;
 
   @media (min-width: 768px) {
@@ -41,7 +42,7 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-
+padding: 200px;
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
@@ -88,9 +89,12 @@ const HeaderText = styled.div`
   }
 `;
 
+
 const Header = () => {
     return (
+
         <HeaderSection>
+
 
             <HeaderContainer>
                 <HeaderImage>
@@ -107,28 +111,12 @@ const Header = () => {
                     </p>
                 </HeaderText>
             </HeaderContainer>
+            
         </HeaderSection>
     );
 };
 
-/* const Header = () => {
-    return (
-        <header className="header">
-            <div className="header-title">
-                <h4>Hi I am Danushka</h4>
-                <h2>Full Stack Developer</h2>
-            </div>
-            <div className="header-container">
-                <div className="header-image">
-                    <img src={ProfilePic} alt="Profile" />
-                </div>
-                <div className="header-text">
-                    <p>Danushka is a passionate developer with a strong foundation in front-end technologies and experience across the full stack. Comfortable with version control using Git and collaborative development workflows, they’ve also worked on dynamic back-end systems and database-driven applications. Their versatility and hands-on experience with modern development tools make them a valuable contributor to any tech team.</p>
-                </div>
-            </div>
-        </header>
-    );
-}; */
+
 
 
 

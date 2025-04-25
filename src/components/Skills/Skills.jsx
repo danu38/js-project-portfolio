@@ -51,6 +51,7 @@ const SkillItem = styled.div`
 
 const Skills = () => {
   return (
+    
     <SkillsWrapper>
       <Title>Skills</Title>
 
@@ -65,6 +66,7 @@ const Skills = () => {
         </CategoryWrapper>
       ))}
     </SkillsWrapper>
+   
   );
 };
 
