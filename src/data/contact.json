@@ -8,13 +8,13 @@
             "socials": [
                 {
                     "platform": "GitHub",
-                    "url": "https://github.com/yourusername",
-                    "icon": "https://github.com/danu38"
+                    "url": "https://github.com/danu38?tab=repositories",
+                    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
                 },
                 {
                     "platform": "LinkedIn",
-                    "url": "https://linkedin.com/in/yourusername",
-                    "icon": "https://www.linkedin.com/in/danushka-somasiri-36478754/"
+                    "url": "https://www.linkedin.com/in/danushka-somasiri-36478754/",
+                    "icon": "https://cdn-icons-png.flaticon.com/512/174/174857.png"
                 },
                 {
                     "platform": "Twitter",

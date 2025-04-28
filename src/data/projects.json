@@ -37,7 +37,7 @@
         "APIs"
       ],
       "Description": "Created a modern, responsive business website using HTML, CSS, and JavaScript. The layout is built with Flexbox and CSS Grid, enhanced with subtle animations and transitions for a smooth user experience. The site includes a functional contact form with input validation and form submission features. This project showcases clean design, responsiveness, and attention to user interaction.",
-      "netlify": "cosmic-malasada-d5ebe2.netlify.app",
+      "netlify": "https://cosmic-malasada-d5ebe2.netlify.app/",
       "github": "link"
     },
     {
@@ -51,7 +51,7 @@
         "APIs"
       ],
       "Description": "Built a recipe search tool using the Spoonacular API. Styled to match a Figma design, with JavaScript handling user input and conditional messages.",
-      "netlify": "recepielibrary.netlify.app",
+      "netlify": "https://recepielibrary.netlify.app/",
       "github": "link"
     },
     {
