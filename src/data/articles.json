@@ -4,12 +4,12 @@
         "title": "Predictive AI model",
         "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
         "tags": [
-          "July 2023",
+          "Juni 2024",
           "Thesis"
         ],
         "Description": "In this project, I developed a predictive model to analyze and optimize energy consumption patterns at electric vehicle (EV) charging stations, using real-world data from Arlanda Airport. The aim was to identify efficient energy usage trends that could support smarter energy distribution and reduce peak load costs.",
       
-        "link": "link"
+        "link": "https://diva-portal.org/smash/record.jsf?dswid=-3471&pid=diva2%3A1871256&c=1&searchType=UNDERGRADUATE&language=en&query=&af=%5B%5D&aq=%5B%5B%7B%22freeText%22%3A%22predictive+model+danushka+somasiri%22%7D%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all"
       },
       {
         "title": "Exploring Joomla CMS vulnerabilities-JoomScan",
@@ -20,7 +20,7 @@
         ],
         "Description": "Joomscan is a tool to scan joomla site and in this article described how can we use it",
       
-        "link": "link"
+        "link": "https://techblog.domains.lk/2020/12/exploring-joomla-cms-vulnerabilities.html"
       },
       {
         "title": "Exploring WordPress Vulnerabilities-WPScan",
@@ -30,7 +30,7 @@
         ],
         "Description": "Introduction about wp scan",
       
-        "link": "link"
+        "link": "https://techblog.domains.lk/2020/10/exploring-wordpress-vulnerabilities.html"
       },
       {
         "title": "Hardening Wordpress",
@@ -40,7 +40,7 @@
         ],
         "Description": "Described about wordpress hardning step by step",
       
-        "link": "link"
+        "link": "https://techblog.domains.lk/2020/11/hardening-wordpress.html"
       }
     ]
   }

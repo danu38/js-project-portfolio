@@ -9,7 +9,7 @@
         "JavaScript"
       ],
       "Description": "The project emphasized keyboard navigation, clear focus states, and high color contrast to support users with different abilities. This project reflects a strong understanding of web accessibility standards (WCAG) and a commitment to building user-first experiences.",
-      "netlify": "link",
+      "netlify": "https://accessibilityweb.netlify.app",
       "github": "link"
     },
     {
@@ -23,7 +23,7 @@
         "APIs"
       ],
       "Description": "Responsive weather application that connects to the OpenWeatherMap API to display real-time weather data. The app shows the current weather, temperature in Celsius, and a 4-day forecast for selected locations. This project highlights API integration skills, dynamic UI updates, and working with external data sources.",
-      "netlify": "link",
+      "netlify": "https://weatherforecastteamearth.netlify.app/",
       "github": "link"
     },
     {
@@ -37,7 +37,7 @@
         "APIs"
       ],
       "Description": "Created a modern, responsive business website using HTML, CSS, and JavaScript. The layout is built with Flexbox and CSS Grid, enhanced with subtle animations and transitions for a smooth user experience. The site includes a functional contact form with input validation and form submission features. This project showcases clean design, responsiveness, and attention to user interaction.",
-      "netlify": "link",
+      "netlify": "cosmic-malasada-d5ebe2.netlify.app",
       "github": "link"
     },
     {
@@ -51,7 +51,7 @@
         "APIs"
       ],
       "Description": "Built a recipe search tool using the Spoonacular API. Styled to match a Figma design, with JavaScript handling user input and conditional messages.",
-      "netlify": "link",
+      "netlify": "recepielibrary.netlify.app",
       "github": "link"
     },
     {
@@ -65,8 +65,8 @@
         "APIs"
       ],
       "Description": "Worked on a domain registration website where customers could search, request, and manage their domains. The platform included features for managing value-added services, and handling secure payments directly through the site. Gained experience in full-stack development, customer workflows, and payment integration.",
-      "netlify": "link",
-      "github": "link"
+      "link": "https://rs.domains.lk/myaccountlogin",
+      "github": "private"
     },
     {
       "name": "E-Learning Platform with Moodle",
@@ -79,7 +79,7 @@
         "APIs"
       ],
       "Description": "Set up and configured a full Moodle-based e-learning website, handling installation, system setup, and admin configurations. Created and managed training courses focused on WordPress development, including course structure, content uploads, and user access. This project highlights experience with LMS platforms, server-side setup, and online course delivery.",
-      "netlify": "link",
+      "link": "https://suhurusara.lk/",
       "github": "link"
     },
     {
@@ -93,7 +93,7 @@
         "APIs"
       ],
       "Description": "An upcoming project focused on showcasing top travel destinations across Sri Lanka, featuring a place directory, booking list, and price comparison tools. The goal is to build a user-friendly platform that helps travelers explore, plan, and book trips with ease. This project will emphasize clean UI design, dynamic content, and integration with travel-related APIs or booking systems.",
-      "netlify": "link",
+      "netlify": "todolist.netlify.app",
       "github": "link"
     }
   ]
