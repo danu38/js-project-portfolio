@@ -2,7 +2,7 @@
     "articles": [
       {
         "title": "Predictive AI model",
-        "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+        "image": "1",
         "tags": [
           "Juni 2024",
           "Thesis"
@@ -13,7 +13,7 @@
       },
       {
         "title": "Exploring Joomla CMS vulnerabilities-JoomScan",
-        "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+        "image": "2",
         "tags": [
           "July 2021"
   
@@ -24,7 +24,7 @@
       },
       {
         "title": "Exploring WordPress Vulnerabilities-WPScan",
-        "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+        "image": "3",
         "tags": [
           "Jan 2022"
         ],
@@ -34,7 +34,7 @@
       },
       {
         "title": "Hardening Wordpress",
-        "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+        "image": "4",
         "tags": [
           "Nov 2020"
         ],

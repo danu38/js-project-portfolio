@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import img1 from '../../assets/thesis.png';
+import img2 from '../../assets/Joomlascan.png';
+import img3 from '../../assets/wpscan.png';
+import img4 from '../../assets/wpscan.png';
+
+
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,10 +78,19 @@ const Links = styled.div`
   margin-top: 1rem;
   `;
 
+  const imageMap = {
+    "1": img1,
+    "2": img2,
+    "3": img3,
+    "4": img4
+  };
+
 const card = ({ image, title, Description, tags, link }) => {
+
+  const projectImage = imageMap[image]; 
     return (
         <CardWrapper>
-            <Image src={image} alt={title} />
+            <Image src={projectImage} alt={title} />
             <Info>
                 <Title>{title}</Title>
                 <Desc>{Description}</Desc>
