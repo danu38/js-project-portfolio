@@ -24,7 +24,6 @@ const CardWrapper = styled.div`
 `;
 
 const Image = styled.img`
-  
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -86,7 +85,6 @@ const Links = styled.div`
   };
 
 const card = ({ image, title, Description, tags, link }) => {
-
   const projectImage = imageMap[image]; 
     return (
         <CardWrapper>
@@ -108,8 +106,5 @@ const card = ({ image, title, Description, tags, link }) => {
         </CardWrapper>
     )
 }
-
-
-
 
 export default card;

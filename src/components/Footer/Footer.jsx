@@ -12,7 +12,7 @@ const FooterContainer = styled.footer`
 const Scroller = styled.div`
   display: inline-block;
   white-space: nowrap;
-  animation: scroll 15s linear infinite;
+  animation: scroll 50s linear infinite;
 
   @keyframes scroll {
     0% {

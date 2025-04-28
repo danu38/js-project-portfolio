@@ -9,9 +9,7 @@ import { Element } from 'react-scroll';
 const SkillsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   padding: 2rem;
- 
   justify-content: center;
   gap: 2rem;
   background-color: #1f0e5e;
@@ -21,7 +19,8 @@ const Title = styled.h2`
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  width: 100%;color: #e0e0eb;
+  width: 100%;
+  color: #e0e0eb;
 `;
 
 const CategoryWrapper = styled.div`
@@ -41,7 +40,8 @@ const CategoryTitle = styled.h3`
 const SkillGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;flex-direction:column;
+  gap: 1rem;
+  flex-direction:column;
 `;
 
 const SkillItem = styled.div`

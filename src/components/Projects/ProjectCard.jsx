@@ -7,6 +7,7 @@ import img3 from '../../assets/3.png';
 import img4 from '../../assets/4.png';
 import img5 from '../../assets/5.png';
 import img6 from '../../assets/6.png';
+import img7 from '../../assets/comingsoon.jpg';
 
 
 
@@ -86,7 +87,8 @@ const imageMap = {
   "3": img3,
   "4": img4,
   "5": img5,
-  "6": img6
+  "6": img6,
+  "7": img7
 };
 
 const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {

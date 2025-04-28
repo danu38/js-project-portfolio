@@ -23,7 +23,7 @@ padding: 2rem 4rem;
 const Title = styled.h2`
   font-size: 2rem;
     font-weight: bold;
-    text-align: left; /* Make sure text aligns to left */
+    text-align: left; 
     margin-bottom: 2rem;
     color: #050114;
     font-family: 'Nanum Gothic Coding', monospace;

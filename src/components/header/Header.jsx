@@ -53,17 +53,31 @@ padding: 200px;
 `;
 
 const HeaderImage = styled.div`
+  animation: grow 2s ease-out forwards;
+
   img {
-    width: 160px;
-    height: 160px;
+    width: 100px; /* start small */
+    height: 100px;
     border-radius: 50%;
     border: 5px solid #ffffff;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin-top: 3rem;
+    margin-top: 3rem;
+
     @media (min-width: 768px) {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
   }
 `;

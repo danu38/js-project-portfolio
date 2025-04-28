@@ -50,11 +50,10 @@ const InfoContainer = styled.div`
 `;
 
 const ContactTitle = styled.h2`
-    font-size: 2rem;
+  font-size: 2rem;
   color: #1e104e;
   font-family: "Nanum Gothic Coding", monospace;
   
-
   @media (max-width: 768px) {
     font-size: 1.2rem;
     gap: 1rem;
@@ -66,7 +65,6 @@ const Name = styled.h2`
   color: #0c0c0c;
   font-family: "Nanum Gothic Coding", monospace;
   
-
   @media (max-width: 768px) {
     font-size: 1.2rem;
     gap: 0rem;
@@ -81,7 +79,7 @@ const ContactImage = styled.div`
     border: 5px solid #ffffff;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin-top: 3rem;
+    margin-top: 3rem;
     @media (min-width: 768px) {
       width: 180px;
       height: 180px;
