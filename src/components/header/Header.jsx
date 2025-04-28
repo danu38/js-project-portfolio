@@ -131,7 +131,7 @@ const Header = () => {
                         <h2>Full Stack Developer</h2>
                     </HeaderTitle>
                     <p>
-                        Danushka is a passionate developer with a strong foundation in front-end technologies and experience across the full stack. Comfortable with version control using Git and collaborative development workflows, they’ve also worked on dynamic back-end systems and database-driven applications. Their versatility and hands-on experience with modern development tools make them a valuable contributor to any tech team.
+                        Danushka is a passionate developer with a strong foundation in front-end technologies and experience across the full stack.  I am comfortable with version control using Git and collaborative development workflows, and I have also worked on dynamic back-end systems and database-driven applications. My versatility and hands-on experience with modern development tools make me a valuable contributor to any tech team.
                     </p>
                 </HeaderText>
             </HeaderContainer>
