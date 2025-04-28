@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Web accessibility project in JavaScript",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "1",
       "tags": [
         "HTML5",
         "CSS3",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "2",
       "tags": [
         "HTML5",
         "CSS3",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Business Project",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "3",
       "tags": [
         "HTML5",
         "CSS3",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Recipe Project",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "4",
       "tags": [
         "HTML5",
         "CSS3",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Domain Business Site",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "5",
       "tags": [
         "HTML5",
         "CSS3",
@@ -70,7 +70,7 @@
     },
     {
       "name": "E-Learning Platform with Moodle",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "6",
       "tags": [
         "HTML5",
         "CSS3",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Travel Site",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "7",
       "tags": [
         "HTML5",
         "CSS3",

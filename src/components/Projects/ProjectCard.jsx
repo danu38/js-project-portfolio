@@ -1,6 +1,13 @@
 // import './Project.css';
 import React from 'react';
 import styled from 'styled-components';
+import img1 from '../../assets/1.png';
+import img2 from '../../assets/2.png';
+import img3 from '../../assets/3.png';
+import img4 from '../../assets/4.png';
+import img5 from '../../assets/5.png';
+import img6 from '../../assets/6.png';
+
 
 
 
@@ -17,7 +24,8 @@ display: flex;
 
 const Image = styled.img`
   width: 100%;
-  max-width: 300px;
+  max-width: 300px;height: auto; object-fit: cover;
+  aspect-ratio: 3 / 2;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 `;
@@ -65,10 +73,21 @@ const Links = styled.div`
   }
 `;
 
+const imageMap = {
+  "1": img1,
+  "2": img2,
+  "3": img3,
+  "4": img4,
+  "5": img5,
+  "6": img6
+};
+
 const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {
-    return (
+    
+  const projectImage = imageMap[image]; 
+  return (
         <Card>
-            <Image src={image} alt={name} className="project-image" />
+            <Image src={projectImage} alt={name} className="project-image" />
             <Info>
                 <Title>{name}</Title>
                 <Desc>{Description}</Desc>
