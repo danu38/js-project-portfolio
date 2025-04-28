@@ -66,10 +66,17 @@ const Tag = styled.span`
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   border-radius: 4px;
+  font-size: 0.65rem;
+@media screen and (max-width: 768px) {
   font-size: 0.85rem;
+}
+
 `;
 const Links = styled.div`
   margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   a {
     margin-right: 1rem;
     text-decoration: none;
@@ -79,6 +86,17 @@ const Links = styled.div`
     background-color: #e0e0e0;
     padding: 0.5rem 1rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; /* optional: center the buttons */
+
+    a {
+      width: 100%; /* make buttons full width */
+      text-align: center;
+    }
+  }
+
 `;
 
 const imageMap = {

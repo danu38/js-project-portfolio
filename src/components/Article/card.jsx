@@ -107,4 +107,6 @@ const card = ({ image, title, Description, tags, link }) => {
     )
 }
 
+
+
 export default card;

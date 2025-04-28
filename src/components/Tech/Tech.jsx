@@ -69,14 +69,14 @@ const ScrollArrow = styled.div`
 
 const TextContent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center; /* center text */
   gap: 2rem;
 
   @media (max-width: 768px) {
     display: flex;
-    flex-direction: row; /* now vertical! */
+    flex-direction: column; /* now vertical! */
   }
 `;
 

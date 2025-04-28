@@ -19,7 +19,6 @@ padding: 2rem 4rem;
 
 `;
 
-
 const Title = styled.h2`
   font-size: 2rem;
     font-weight: bold;
