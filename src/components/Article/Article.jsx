@@ -10,13 +10,14 @@ import { Element } from 'react-scroll';
 
 
 const Section = styled.section`
-padding: 2rem 4rem;
+padding: 2rem 1rem;
     align-items: center;
     justify-content:center;
     display: flex;
     flex-direction: column;
     background-color: #E1D8F5;
-
+    width: 100%;
+    overflow-x: hidden;
 `;
 
 const Title = styled.h2`
@@ -34,6 +35,8 @@ const Grid = styled.div`
   gap: 2rem;
   justify-items: center;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on larger screens */

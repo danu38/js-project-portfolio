@@ -10,11 +10,14 @@ import img4 from '../../assets/wpscan.png';
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  max-width: 350px;
+  max-width: 100%;
   width: 100%;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     flex-direction: column;
@@ -33,7 +36,7 @@ const Image = styled.img`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  width: 100%;
 `;
 
 const Title = styled.h3`
@@ -102,8 +105,8 @@ const card = ({ image, title, Description, tags, link }) => {
                     <Link href={link} target="_blank" rel="noreferrer">🌐 Read more</Link>
 
                 </Links>
-            </Info>
-        </CardWrapper>
+             </Info>
+        </CardWrapper>    
     )
 }
 
