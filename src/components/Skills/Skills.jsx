@@ -28,13 +28,13 @@ const CategoryWrapper = styled.div`
   display: flex;
   min-width: 200px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; 
 `;
 
 const CategoryTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #f8f4f4;
+  color: #f8f4f4;margin-left: 1rem;
 `;
 
 const SkillGrid = styled.div`
@@ -53,8 +53,10 @@ const SkillItem = styled.div`
 `;
 
 const ScrollArrow = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
-  text-align: center;
   cursor: pointer;
 
   svg {
@@ -72,10 +74,14 @@ const ScrollArrow = styled.div`
     }
   }
 `;
-
+const SkillsSection = styled.div`
+  background-color: #1f0e5e;
+  padding: 2rem;
+`;
 const Skills = () => {
   return (
     <Element name="skills">
+      <SkillsSection> 
     <SkillsWrapper>
       <Title>Skills</Title>
 
@@ -90,12 +96,14 @@ const Skills = () => {
         </CategoryWrapper>
       ))}
 
-      <ScrollArrow>
+
+    </SkillsWrapper>
+    <ScrollArrow>
         <Link to="contact" smooth={true} duration={600}>
           <FaChevronDown />
         </Link>
       </ScrollArrow>
-    </SkillsWrapper>
+      </SkillsSection>
 </Element>
   );
 };

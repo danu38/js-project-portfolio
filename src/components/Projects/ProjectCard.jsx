@@ -68,7 +68,7 @@ const Tag = styled.span`
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   border-radius: 4px;
-  font-size: 0.65rem;
+  font-size: 0.65rem; margin-bottom: 0.65rem;
 @media screen and (max-width: 768px) {
   font-size: 0.85rem;
 }

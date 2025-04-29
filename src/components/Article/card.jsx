@@ -12,7 +12,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
+  max-width: 550px;
   width: 100%;
   align-items: center;
   padding: 1rem;
