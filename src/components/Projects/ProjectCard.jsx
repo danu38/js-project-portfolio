@@ -8,7 +8,7 @@ import img4 from '../../assets/4.png';
 import img5 from '../../assets/5.png';
 import img6 from '../../assets/6.png';
 import img7 from '../../assets/comingsoon.jpg';
-
+import { motion } from 'framer-motion';
 
 
 
@@ -32,6 +32,15 @@ display: flex;
 
 const Image = styled.img`
  
+  max-width: 300px;
+  height: auto; 
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+`;
+
+const MotionImage = styled(motion.img)`
   max-width: 300px;
   height: auto; 
   object-fit: cover;
@@ -114,10 +123,24 @@ const imageMap = {
 const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {
     
   const projectImage = imageMap[image]; 
+  const MotionImage = motion(Image);
+const MotionInfo = motion(Info);
   return (
         <Card>
-            <Image src={projectImage} alt={name} className="project-image" />
-            <Info>
+            <MotionImage
+                src={projectImage}
+                alt={name}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: false, amount: 0.3 }}
+            />
+              <MotionInfo
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
+    viewport={{ once: false, amount: 0.3 }}
+  >
                 <Title>{name}</Title>
                 <Desc>{Description}</Desc>
                 <TagList>
@@ -129,7 +152,7 @@ const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {
                     <a href={netlify} target="_blank" rel="noreferrer">🌐 Live demo</a>
                     <a href={github} target="_blank" rel="noreferrer">💻 View the codeCode</a>
                 </Links>
-            </Info>
+                </MotionInfo>
         </Card>
     )
 }
