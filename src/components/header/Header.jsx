@@ -2,9 +2,9 @@
 import ProfilePic from "../../../assets/profile.jpeg";
 import styled from "styled-components";
 
-import { Link } from 'react-scroll';
-import { FaChevronDown } from 'react-icons/fa';
-import { Element } from 'react-scroll';
+import { Link } from "react-scroll";
+import { FaChevronDown } from "react-icons/fa";
+import { Element } from "react-scroll";
 
 const HeaderSection = styled.header`
   padding: 5rem;
@@ -28,15 +28,16 @@ const HeaderSection = styled.header`
 const HeaderTitle = styled.div`
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #070707;
   text-align: left;
   padding-left: 1rem;
   width: 100%;
 
   h2,
   h4 {
-    margin-bottom: 0rem;    color: #1a168a;
-    font-family: 'Nanum Gothic Coding', monospace;
+    margin-bottom: 0rem;
+    color: #1a168a;
+    font-family: "Nanum Gothic Coding", monospace;
   }
 `;
 
@@ -45,7 +46,7 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
- padding: 1px;
+  padding: 1px;
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
@@ -90,8 +91,8 @@ const HeaderImage = styled.div`
 const HeaderText = styled.div`
   max-width: 100%;
   text-align: left;
-  font-family: 'Hina Mincho', serif;
-  color: #444;
+  font-family: "Hina Mincho", serif;
+  color: #070707;
 
   h1 {
     margin-bottom: 0.5rem;
@@ -99,7 +100,11 @@ const HeaderText = styled.div`
 
   h2 {
     margin-bottom: 1rem;
-    color: #777;
+    color: #0a0a0a;
+  }
+  h4 {
+    margin-bottom: 1rem;
+    color: #2717bd;
   }
 
   p {
@@ -123,7 +128,8 @@ const ScrollArrow = styled.div`
   }
 
   @keyframes bounce {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0);
     }
     50% {
@@ -132,44 +138,38 @@ const ScrollArrow = styled.div`
   }
 `;
 
-
 const Header = () => {
-    return (
+  return (
+    <HeaderSection>
+      <HeaderContainer>
+        <HeaderImage>
+          <img src={ProfilePic} alt="Profile" />
+        </HeaderImage>
 
-        <HeaderSection>
+        <HeaderText>
+          <HeaderTitle>
+            <h4>Hi I am Danushka👋</h4>
+            <h2>Full Stack Developer</h2>
+          </HeaderTitle>
+          <p>
+            Danushka is a passionate developer with a strong foundation in
+            front-end technologies and experience across the full stack. I am
+            comfortable with version control using Git and collaborative
+            development workflows, and I have also worked on dynamic back-end
+            systems and database-driven applications. My versatility and
+            hands-on experience with modern development tools make me a valuable
+            contributor to any tech team.
+          </p>
+        </HeaderText>
+      </HeaderContainer>
 
-
-            <HeaderContainer>
-                <HeaderImage>
-                    <img src={ProfilePic} alt="Profile" />
-                </HeaderImage>
-
-                <HeaderText>
-                    <HeaderTitle>
-                        <h4>Hi I am Danushka👋</h4>
-                        <h2>Full Stack Developer</h2>
-                    </HeaderTitle>
-                    <p>
-                        Danushka is a passionate developer with a strong foundation in front-end technologies and experience across the full stack.  I am comfortable with version control using Git and collaborative development workflows, and I have also worked on dynamic back-end systems and database-driven applications. My versatility and hands-on experience with modern development tools make me a valuable contributor to any tech team.
-                    </p>
-                </HeaderText>
-            </HeaderContainer>
-            
-<ScrollArrow>
-  <Link to="tech" smooth={true} duration={600}>
-    <FaChevronDown />
-  </Link>
-</ScrollArrow>
-
-        </HeaderSection>
-    );
+      <ScrollArrow>
+        <Link to="tech" smooth={true} duration={600}>
+          <FaChevronDown />
+        </Link>
+      </ScrollArrow>
+    </HeaderSection>
+  );
 };
-
-
-
-
-
-
-
 
 export default Header;

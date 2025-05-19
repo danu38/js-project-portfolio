@@ -103,7 +103,7 @@ const TechDesc = styled.div`
   max-width: 600px;
   text-align: left;
   font-family: "Nanum Gothic Coding", monospace;
-  color: #777;
+  color: #ebe9e9;
   font-size: 2rem;
 
   @media (max-width: 768px) {

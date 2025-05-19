@@ -1,16 +1,18 @@
 {
   "projects": [
     {
-      "name": "Web accessibility project",
+      "name": "Movie App",
       "image": "1",
       "tags": [
         "HTML5",
         "CSS3",
-        "JavaScript"
+        "JavaScript",
+        "React",
+        "API"
       ],
-      "Description": "The project emphasized keyboard navigation, clear focus states, and high color contrast to support users with different abilities. This project reflects a strong understanding of web accessibility standards (WCAG) and a commitment to building user-first experiences.",
-      "netlify": "https://accessibilityweb.netlify.app",
-      "github": "link"
+      "Description": "A responsive movie discovery app built with React and The Movie Database (TMDB) API. It features dynamic routing, real-time movie data, and accessibility-friendly design, including loading states, error handling, and a 404 page for invalid routes.",
+      "netlify": "https://findyourmovieshere.netlify.app/",
+      "github": "https://github.com/danu38/js-project-movies"
     },
     {
       "name": "Weather app",
@@ -24,7 +26,7 @@
       ],
       "Description": "Responsive weather application that connects to the OpenWeatherMap API to display real-time weather data. The app shows the current weather, temperature in Celsius, and a 4-day forecast for selected locations. This project highlights API integration skills, dynamic UI updates, and working with external data sources.",
       "netlify": "https://weatherforecastteamearth.netlify.app/",
-      "github": "link"
+      "github": "https://github.com/danu38/js-project-weather-app"
     },
     {
       "name": "Business Project",
@@ -38,7 +40,7 @@
       ],
       "Description": "Created a modern, responsive business website using HTML, CSS, and JavaScript. The layout is built with Flexbox and CSS Grid, enhanced with subtle animations and transitions for a smooth user experience. The site includes a functional contact form with input validation and form submission features. This project showcases clean design, responsiveness, and attention to user interaction.",
       "netlify": "https://cosmic-malasada-d5ebe2.netlify.app/",
-      "github": "link"
+      "github": "https://github.com/danu38/js-project-business-site"
     },
     {
       "name": "Recipe Project",
@@ -52,7 +54,7 @@
       ],
       "Description": "Built a recipe search tool using the Spoonacular API. Styled to match a Figma design, with JavaScript handling user input and conditional messages.",
       "netlify": "https://recepielibrary.netlify.app/",
-      "github": "link"
+      "github": "https://github.com/danu38/js-project-recipe-library"
     },
     {
       "name": "Domain Business Site",
