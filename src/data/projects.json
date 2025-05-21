@@ -7,12 +7,13 @@
         "HTML5",
         "CSS3",
         "JavaScript",
+        "TypeScript",
         "React",
         "API"
       ],
       "Description": "A responsive movie discovery app built with React and The Movie Database (TMDB) API. It features dynamic routing, real-time movie data, and accessibility-friendly design, including loading states, error handling, and a 404 page for invalid routes.",
       "netlify": "https://findyourmovieshere.netlify.app/",
-      "github": "https://github.com/danu38/js-project-movies"
+      "github": "https://github.com/danu38/js_movie_project_TypeScript"
     },
     {
       "name": "Weather app",
