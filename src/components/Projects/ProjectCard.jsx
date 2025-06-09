@@ -64,6 +64,7 @@ const Title = styled.h3`
 
 const Desc = styled.p`
   color: #141414;
+  font-family: 'Hind', sans-serif;
 `;
 
 const TagList = styled.div`
