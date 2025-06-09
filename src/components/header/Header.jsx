@@ -109,6 +109,7 @@ const HeaderText = styled.div`
 
   p {
     line-height: 1.6;
+    font-family: "Hina Mincho", serif;
   }
 
   @media (min-width: 768px) {
