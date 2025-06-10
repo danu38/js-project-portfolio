@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { Element } from "react-scroll";
 
 const HeaderSection = styled.header`
-  padding: 5rem;
+  padding: 2rem;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ const HeaderSection = styled.header`
   }
 
   @media (min-width: 1024px) {
-    padding: 2rem 10rem;
+    padding: 1rem 4rem;
   }
 `;
 
@@ -54,7 +54,7 @@ const HeaderContainer = styled.div`
   }
 
   @media (min-width: 1024px) {
-    padding: 200px;
+    padding: 124px;
   }
 `;
 
@@ -118,7 +118,7 @@ const HeaderText = styled.div`
 `;
 
 const ScrollArrow = styled.div`
-  margin-top: 2rem;
+  margin-top: 0rem;
   text-align: center;
   cursor: pointer;
 
