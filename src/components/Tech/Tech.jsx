@@ -29,7 +29,7 @@ export default Tech;
 
 // ---------- Styled Components ----------
 const TechContainer = styled.div`
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
   background-color: #211668;
   display: flex;
   flex-direction: column; /* now vertical! */
