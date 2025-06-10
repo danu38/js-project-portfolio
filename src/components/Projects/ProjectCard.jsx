@@ -1,25 +1,23 @@
 // import './Project.css';
-import React from 'react';
-import styled from 'styled-components';
-import img1 from '../../assets/1.png';
-import img2 from '../../assets/2.png';
-import img3 from '../../assets/3.png';
-import img4 from '../../assets/4.png';
-import img5 from '../../assets/5.png';
-import img6 from '../../assets/6.png';
-import img7 from '../../assets/comingsoon.jpg';
-import { motion } from 'framer-motion';
-
-
+import React from "react";
+import styled from "styled-components";
+import img1 from "../../assets/1.png";
+import img2 from "../../assets/2.png";
+import img3 from "../../assets/3.png";
+import img4 from "../../assets/4.png";
+import img5 from "../../assets/5.png";
+import img6 from "../../assets/6.png";
+import img7 from "../../assets/comingsoon.jpg";
+import { motion } from "framer-motion";
 
 const Card = styled.div`
-display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem;
-  max-width: 900px; 
+  max-width: 900px;
   padding: 1rem;
   width: 100%; /* Allow responsive shrinking */
   box-sizing: border-box; /* Include padding in width calculation */
@@ -31,9 +29,8 @@ display: flex;
 `;
 
 const Image = styled.img`
- 
   max-width: 300px;
-  height: auto; 
+  height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 2;
   border-radius: 10px;
@@ -42,7 +39,7 @@ const Image = styled.img`
 
 const MotionImage = styled(motion.img)`
   max-width: 300px;
-  height: auto; 
+  height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 2;
   border-radius: 10px;
@@ -64,7 +61,7 @@ const Title = styled.h3`
 
 const Desc = styled.p`
   color: #141414;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
 `;
 
 const TagList = styled.div`
@@ -78,11 +75,11 @@ const Tag = styled.span`
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   border-radius: 4px;
-  font-size: 0.65rem; margin-bottom: 0.65rem;
-@media screen and (max-width: 768px) {
-  font-size: 0.85rem;
-}
-
+  font-size: 0.65rem;
+  margin-bottom: 0.65rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.85rem;
+  }
 `;
 const Links = styled.div`
   margin-top: 1rem;
@@ -108,54 +105,58 @@ const Links = styled.div`
       text-align: center;
     }
   }
-
 `;
 
 const imageMap = {
-  "1": img1,
-  "2": img2,
-  "3": img3,
-  "4": img4,
-  "5": img5,
-  "6": img6,
-  "7": img7
+  1: img1,
+  2: img2,
+  3: img3,
+  4: img4,
+  5: img5,
+  6: img6,
+  7: img7,
 };
 
 const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {
-    
-  const projectImage = imageMap[image]; 
+  const projectImage = imageMap[image];
   const MotionImage = motion(Image);
-const MotionInfo = motion(Info);
+  const MotionInfo = motion(Info);
   return (
-        <Card>
-            <MotionImage
-                src={projectImage}
-                alt={name}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                viewport={{ once: false, amount: 0.3 }}
-            />
-              <MotionInfo
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
-    viewport={{ once: false, amount: 0.3 }}
-  >
-                <Title>{name}</Title>
-                <Desc>{Description}</Desc>
-                <TagList>
-                    {tags.map((tag, index) => (
-                        <Tag key={index} className="tag">{tag}</Tag>
-                    ))}
-                </TagList>
-                <Links>
-                    <a href={netlify} target="_blank" rel="noreferrer">🌐 Live demo</a>
-                    <a href={github} target="_blank" rel="noreferrer">💻 View the codeCode</a>
-                </Links>
-                </MotionInfo>
-        </Card>
-    )
-}
+    <Card>
+      <MotionImage
+        src={projectImage}
+        alt={name}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      />
+      <MotionInfo
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Title>{name}</Title>
+        <Desc>{Description}</Desc>
+        <TagList>
+          {tags.map((tag, index) => (
+            <Tag key={index} className="tag">
+              {tag}
+            </Tag>
+          ))}
+        </TagList>
+        <Links>
+          <a href={netlify} target="_blank" rel="noreferrer">
+            🌐 Live demo
+          </a>
+          <a href={github} target="_blank" rel="noreferrer">
+            💻 View the codeCode
+          </a>
+        </Links>
+      </MotionInfo>
+    </Card>
+  );
+};
 
 export default ProjectCard;
