@@ -68,7 +68,7 @@
         "APIs"
       ],
       "Description": "Worked on a domain registration website where customers could search, request, and manage their domains. The platform included features for managing value-added services, and handling secure payments directly through the site. Gained experience in full-stack development, customer workflows, and payment integration.",
-      "link": "https://rs.domains.lk/myaccountlogin",
+      "netlify": "https://rs.domains.lk/myaccountlogin",
       "github": "private"
     },
     {
@@ -82,7 +82,7 @@
         "APIs"
       ],
       "Description": "Set up and configured a full Moodle-based e-learning website, handling installation, system setup, and admin configurations. Created and managed training courses focused on WordPress development, including course structure, content uploads, and user access. This project highlights experience with LMS platforms, server-side setup, and online course delivery.",
-      "link": "https://suhurusara.lk/",
+      "netlify": "https://suhurusara.lk/",
       "github": "link"
     },
     {
