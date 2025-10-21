@@ -1,8 +1,22 @@
 {
   "projects": [
     {
-      "name": "Movie App",
+      "name": "AI subtitle generater",
       "image": "1",
+      "tags": [
+        "React",
+        "JavaScript",
+        "Web Speech API",
+        "HTML5 Video",
+        "CSS3"
+      ],
+      "Description": "Real-time subtitle overlay on video player.",
+      "netlify": "https://subtitle-generator-443e.onrender.com/",
+      "github": "https://github.com/danu38/subtitle-generator"
+    },
+    {
+      "name": "Movie App",
+      "image": "2",
       "tags": [
         "HTML5",
         "CSS3",
@@ -17,7 +31,7 @@
     },
     {
       "name": "Weather app",
-      "image": "2",
+      "image": "3",
       "tags": [
         "HTML5",
         "CSS3",
@@ -31,7 +45,7 @@
     },
     {
       "name": "Business Project",
-      "image": "3",
+      "image": "4",
       "tags": [
         "HTML5",
         "CSS3",
@@ -45,7 +59,7 @@
     },
     {
       "name": "Recipe Project",
-      "image": "4",
+      "image": "5",
       "tags": [
         "HTML5",
         "CSS3",
@@ -59,7 +73,7 @@
     },
     {
       "name": "Domain Business Site",
-      "image": "5",
+      "image": "6",
       "tags": [
         "HTML5",
         "CSS3",
@@ -73,7 +87,7 @@
     },
     {
       "name": "E-Learning Platform with Moodle",
-      "image": "6",
+      "image": "7",
       "tags": [
         "HTML5",
         "CSS3",
@@ -87,7 +101,7 @@
     },
     {
       "name": "Travel Site",
-      "image": "7",
+      "image": "8",
       "tags": [
         "HTML5",
         "CSS3",
