@@ -8,14 +8,15 @@ import img4 from "../../assets/4.png";
 import img5 from "../../assets/5.png";
 import img6 from "../../assets/6.png";
 import img7 from "../../assets/comingsoon.jpg";
+import img8 from "../../assets/subtitle.png";
 import { motion } from "framer-motion";
 
 const Card = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 3rem;
   max-width: 900px;
   padding: 1rem;
@@ -25,25 +26,26 @@ const Card = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 `;
 
 const Image = styled.img`
-  max-width: 300px;
-  height: auto;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  aspect-ratio: 3 / 2;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 `;
 
 const MotionImage = styled(motion.img)`
-  max-width: 300px;
-  height: auto;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  aspect-ratio: 3 / 2;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 `;
 
 const Info = styled.div`
@@ -108,6 +110,7 @@ const Links = styled.div`
 `;
 
 const imageMap = {
+  8: img8,
   1: img1,
   2: img2,
   3: img3,
@@ -115,6 +118,7 @@ const imageMap = {
   5: img5,
   6: img6,
   7: img7,
+  
 };
 
 const ProjectCard = ({ image, name, Description, tags, netlify, github }) => {
